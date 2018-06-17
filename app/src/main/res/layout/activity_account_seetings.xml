@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountSeetingsActivity">
+
+    <include layout="@layout/appbar_layout"
+        android:id="@+id/toolbar_accountsettins"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/toolbar_accountsettins"
+        android:id="@+id/imageview_profile_AccountSetting"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:src="@drawable/default_avatar"/>
+    <TextView
+        android:id="@+id/tv_username_settingactivty"
+        android:layout_below="@+id/imageview_profile_AccountSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:text="Username"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_status_accountsettingactivity"
+        android:layout_below="@+id/tv_username_settingactivty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/btn_changeimage_setting_activity"
+        android:layout_below="@+id/tv_username_settingactivty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changeimage"
+        android:background="@drawable/ccorner_5_degeree"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_change_status_settingactivity"
+        android:layout_below="@+id/btn_changeimage_setting_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update status"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

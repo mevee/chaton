@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menu_accountsettings"
+    android:title="Account Settings"/>
+    <item android:id="@+id/menu_allusers"
+        android:title="All users"/>
+    <item android:id="@+id/menu_signout"
+        android:title="Signout"/>
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/friend_reqest_image"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:src="@drawable/default_avatar"/>
+    <TextView
+        android:layout_toRightOf="@+id/friend_reqest_image"
+        android:id="@+id/friend_reqest_usernametv"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:layout_marginLeft="4dp"
+        android:textSize="18sp"/>
+    <Button
+        android:layout_toLeftOf="@+id/friend_reqest_declinerequestbtn"
+        android:id="@+id/friend_reqest_acceptrequestbtn"
+        android:text="Accept"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2cdeb4"/>
+
+    <Button
+        android:id="@+id/friend_reqest_declinerequestbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:background="#e90228"
+        android:text="Decline" />
+</RelativeLayout>
